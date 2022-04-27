@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lists</title>
+    <link rel="stylesheet" href="./app.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&family=Dancing+Script&family=Nunito+Sans:wght@300&family=Poppins:wght@200&family=Red+Hat+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h3>Grocery Bud</h3>
+      <form id="new-form">
+        <input
+          id="tarea"
+          type="text"
+          placeholder="e.g. training"
+          onkeyup="filt()"
+        />
+        <input type="submit" id="btn" />
+      </form>
+
+      <ul id="list"></ul>
+      <button class="clear" onclick="clearli()">Clear Items</button>
+    </div>
+
+    <script src="./app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/f411cc5e95.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
