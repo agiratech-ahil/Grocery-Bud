@@ -101,7 +101,7 @@ h3 {
   font-size: 20px;
   letter-spacing: 3px;
   color: #e9756b;
-  position: sticky;
+  /* position: sticky; */
   cursor: pointer;
 }
 .tasktext {

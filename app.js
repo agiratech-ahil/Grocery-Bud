@@ -5,11 +5,13 @@ var btn = document.getElementById("btn");
 var form = document.getElementById("new-form");
 var editbt = document.getElementById("saveIndex");
 var savebtn = document.getElementById("butn");
+var clearall = document.getElementsByClassName("clear");
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
   list.push(inp.value);
   inp.value = "";
+
   showlist();
 });
 
