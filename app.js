@@ -5,14 +5,10 @@ var btn = document.getElementById("btn");
 var form = document.getElementById("new-form");
 
 form.addEventListener("submit", function (e) {
-  if (inp.value == "") {
-    alert("Please enter a item");
-  } else {
-    e.preventDefault();
-    list.push(inp.value);
-    inp.value = "";
-    showlist();
-  }
+  e.preventDefault();
+  list.push(inp.value);
+  inp.value = "";
+  showlist();
 });
 
 function showlist() {
