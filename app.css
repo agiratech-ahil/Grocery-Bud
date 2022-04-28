@@ -35,7 +35,9 @@ h3 {
   outline: none;
 }
 #btn {
-  margin-left: 0%;
+  display: block;
+  margin-left: 74.2%;
+  margin-top: -4.7%;
   height: 3.7vh;
   width: 12%;
   font-size: 17px;
@@ -45,6 +47,20 @@ h3 {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   letter-spacing: 3px;
+}
+#butn {
+  margin-left: 74.2%;
+  margin-top: -4.7%;
+  height: 3.7vh;
+  width: 12%;
+  font-size: 17px;
+  background-color: #a4d4f9;
+  border: none;
+  cursor: pointer;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  letter-spacing: 3px;
+  display: none;
 }
 .content {
   list-style: none;

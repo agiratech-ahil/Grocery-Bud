@@ -3,6 +3,8 @@ var inp = document.getElementById("tarea");
 var todolist = document.getElementById("list");
 var btn = document.getElementById("btn");
 var form = document.getElementById("new-form");
+var editbt = document.getElementById("saveIndex");
+var savebtn = document.getElementById("butn");
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
@@ -32,9 +34,25 @@ function showlist() {
 }
 
 function edit(i) {
+  editbt.value = i;
   inp.value = list[i];
-  list.splice(i, 1);
+  btn.style.display = "none";
+  savebtn.style.display = "block";
 }
+
+savebtn.addEventListener("click", () => {
+  let id = editbt.value;
+  list[id] = inp.value;
+  btn.style.display = "block";
+  savebtn.style.display = "none";
+  inp.value = "";
+  showlist();
+});
+
+// function edit(i) {
+//   inp.value = list[i];
+//   list.splice(i, 1);
+// }
 
 function deleteItem(i) {
   list.splice(i, 1);
