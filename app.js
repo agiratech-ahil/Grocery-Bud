@@ -54,8 +54,11 @@ function deleteItem(i) {
   showlist();
 }
 function clearli() {
-  list = [];
-  showlist();
+  var deltxt = "Please confirm";
+  if (confirm(deltxt) == true) {
+    list = [];
+    showlist();
+  }
 }
 function search() {
   let filter = inp.value.toUpperCase();
