@@ -49,11 +49,6 @@ savebtn.addEventListener("click", () => {
   showlist();
 });
 
-// function edit(i) {
-//   inp.value = list[i];
-//   list.splice(i, 1);
-// }
-
 function deleteItem(i) {
   list.splice(i, 1);
   showlist();
