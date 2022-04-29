@@ -5,11 +5,14 @@ var btn = document.getElementById("btn");
 var form = document.getElementById("new-form");
 var editbt = document.getElementById("saveIndex");
 var savebtn = document.getElementById("butn");
-var clearall = document.getElementsByClassName("clear");
+var clearall = document.getElementById("clr");
+var li = document.getElementsByTagName("li");
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
+
   list.push(inp.value);
+
   inp.value = "";
 
   showlist();
@@ -17,9 +20,10 @@ form.addEventListener("submit", function (e) {
 
 function showlist() {
   todolist.innerHTML = "";
+
   list.forEach(function (n, i) {
     todolist.innerHTML +=
-      "<li class='content'>" +
+      "<li id='li' class='content'>" +
       "<a>" +
       n +
       "</a>" +
@@ -33,6 +37,13 @@ function showlist() {
       ")' class='fa-solid fa-trash-can'>" +
       "</i>";
   });
+
+  let count = document.getElementById("list").getElementsByTagName("li").length;
+  if (count == 0) {
+    clearall.style.display = "none";
+  } else {
+    clearall.style.display = "block";
+  }
 }
 
 function edit(i) {
@@ -53,6 +64,7 @@ savebtn.addEventListener("click", () => {
 
 function deleteItem(i) {
   list.splice(i, 1);
+
   showlist();
 }
 function clearli() {

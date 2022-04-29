@@ -5,7 +5,7 @@ body {
 
 .container {
   font-family: "Open Sans", sans-serif;
-
+  overflow: hidden;
   border: none;
   box-shadow: 1px 2px 25px rgb(221, 218, 218);
   background-color: white;
@@ -94,7 +94,7 @@ h3 {
   cursor: pointer;
 }
 .clear {
-  margin-top: 10%;
+  margin-top: 14%;
   margin-left: 40%;
   border: none;
   background-color: transparent;
@@ -103,6 +103,7 @@ h3 {
   color: #e9756b;
   /* position: sticky; */
   cursor: pointer;
+  display: none;
 }
 .tasktext {
   border: none;
@@ -115,4 +116,9 @@ img {
 }
 a {
   position: absolute;
+  overflow-x: scroll;
+  width: 20%;
+}
+::-webkit-scrollbar {
+  display: none;
 }
