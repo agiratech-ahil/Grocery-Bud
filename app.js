@@ -56,7 +56,7 @@ function deleteItem(i) {
   showlist();
 }
 function clearli() {
-  var deltxt = "Please confirm";
+  var deltxt = "Are you sure to clear the list?";
   if (confirm(deltxt) == true) {
     list = [];
     showlist();
